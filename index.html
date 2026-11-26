@@ -144,7 +144,7 @@
 
   <section>
     <h2><span class="icon">🗄️</span> Data Storage</h2>
-    <p>Your progress data is stored locally on your device. If you are signed in, quiz sessions and progress may be synced to Firebase (Google) servers located in the European Union or the United States, subject to Google's Privacy Policy.</p>
+    <p>Your progress data is stored locally on your device. If you are signed in, your progress and your profile are stored in a Cloud Firestore database hosted in <strong>Zurich, Switzerland</strong> (region europe-west6). Switzerland is not a member of the European Union, but it is recognised by the European Commission as providing an adequate level of data protection, so no additional safeguard is required for transfers from the EEA. Firebase Authentication, which holds only your email address and the authentication record itself, is operated by Google and may process that data outside Switzerland, including in the United States, subject to Google’s Privacy Policy.</p>
     <ul>
       <li>Firebase Authentication — <a href="https://firebase.google.com/support/privacy" target="_blank">Google Privacy Policy</a></li>
       <li>RevenueCat — <a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></li>
@@ -181,7 +181,8 @@
     <h2><span class="icon">🌍</span> International Data Transfers</h2>
     <p>Some of our processors operate infrastructure outside the European Economic Area:</p>
     <ul>
-      <li>Firebase and RevenueCat process data on Google/AWS infrastructure (US).</li>
+      <li>Firebase Authentication and RevenueCat process data on Google/AWS infrastructure, which may include the United States.</li>
+      <li>Cloud Firestore, which holds your progress and your profile, does not: it is hosted in Zurich, Switzerland.</li>
       <li>Transfers are covered by Standard Contractual Clauses (SCCs) under EU Commission decision 2021/914.</li>
     </ul>
   </section>
